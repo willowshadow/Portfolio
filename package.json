@@ -6,7 +6,8 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "deploy" : "npm run build&&gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,15 +19,16 @@
   "bugs": {
     "url": "https://github.com/cobidev/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
+  "homepage": "https://willowshadow.github.io/willowshadow.github.io",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.1",
-    "parcel": "^2.0.1",
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
     "prettier": "^2.4.1"
   },
   "dependencies": {
     "@popperjs/core": "^2.10.2",
     "bootstrap": "^5.1.3",
+    "gh-pages": "^4.0.0",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "vanilla-tilt": "^1.7.2"
