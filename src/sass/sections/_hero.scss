@@ -1,12 +1,12 @@
 #hero {
-  min-height: 100vh;
-  height: 100vh;
+  min-height: 70vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: $white-color;
+  background: rgba($color: $white-color, $alpha: 0.05);
   font-weight: 400;
-  color: $dark-blue-text;
+  color: white;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;
