@@ -33,7 +33,7 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
-
+    
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
@@ -420,7 +420,7 @@
       </div>
     </footer>
     <!-- /END Footer Section -->
-
+    
     <script defer type="module" src="index.js"></script>
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
@@ -466,6 +466,36 @@
       function stopVideo() {
         player.stopVideo();
       }
+    </script>
+    <script type="module">
+
+      import { firebase } from 'firebase/app';
+      import { initializeApp } from 'firebase/app';
+      import { getAnalytics } from 'firebase/analytics';
+
+      // Import the functions you need from the SDKs you need
+     /*  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"; */
+     /*  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js"; */
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyA3xMxK3qjrregiot3QJoAih5oktPDahsA",
+        authDomain: "danigamedev.firebaseapp.com",
+        projectId: "danigamedev",
+        storageBucket: "danigamedev.appspot.com",
+        messagingSenderId: "318699217324",
+        appId: "1:318699217324:web:860a60f425a99a04aa1a09",
+        measurementId: "G-NWQVT0GRNZ"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      console.log(app.appId);
+      const analytics = getAnalytics(app);
+      
     </script>
   </body>
 </html>
